@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer{
+  .wrapper{
+    @apply max-w-[1300px] mx-auto px-4
+  }
+  svg{
+    @apply w-full
+  }
+}
+
+.drawer-menu{
+  @apply invisible;
+}
+
+.drawer-menu.active{
+  @apply visible;
+}
+
+.menu-inner{
+  @apply -translate-x-full;
+}
+
+.drawer-menu.active .menu-inner{
+  @apply translate-x-0;
+}
