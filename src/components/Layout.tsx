@@ -9,7 +9,7 @@ export const Layout = ({ children, ...props }: Props)=>{
   return(
     <>
       <NavBar/>
-      <main {...props}>
+      <main {...props} id="Inicio">
         {children}
       </main>
       <Footer/>

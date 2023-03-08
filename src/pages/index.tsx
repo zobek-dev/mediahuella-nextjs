@@ -1,10 +1,11 @@
-import { SeoHead } from "@/components/"
+import { SeoHead, Hero, Servicios } from "@/components/"
 
 const Home = () => {
   return (
     <>
       <SeoHead/>
-      <h1>Hello World</h1>
+      <Hero/>
+      <Servicios/>
     </> 
   )
 }

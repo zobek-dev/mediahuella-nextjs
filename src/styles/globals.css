@@ -27,3 +27,7 @@
 .drawer-menu.active .menu-inner{
   @apply translate-x-0;
 }
+
+.mail_svg__mail-icon{
+  @apply w-[26px]
+}
