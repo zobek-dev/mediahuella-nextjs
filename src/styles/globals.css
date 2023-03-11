@@ -31,3 +31,13 @@
 .mail_svg__mail-icon{
   @apply w-[26px]
 }
+
+.button-prev_svg__prev,
+.button-next_svg__next{
+  @apply w-[50px]
+}
+
+button[name="next"][disabled],
+button[name="prev"][disabled]{
+  @apply opacity-30
+}

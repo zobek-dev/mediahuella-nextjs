@@ -6,10 +6,10 @@ const servicios = [
     image: Ecommerce,
     title: 'Ecommerce en shopify',
     features: [
-      'Desarrollo y migración de tiendas online en Shopify',
+      'Desarrollo y migración de tiendas.',
       'Configuraciones generales',
       'Integraciones con aplicaciones',
-      'Administración con soporte permanente.'
+      'Administración y soporte permanente.'
     ]
   },
   {
@@ -27,7 +27,7 @@ const servicios = [
     image: Fotografia,
     title: 'Fotografía',
     features: [
-      'Fotografía profesional producto/ambientadas',
+      'Fotografía profesional',
       'Set estudio fotográfico',
       'Formato de fotos para marketplace'
     ]
@@ -50,12 +50,12 @@ export const Servicios = () => {
   return(
     <section id="QueHacemos" className="my-6 py-4 lg:my-12 lg:py-8">
       <div className="wrapper">
-        <h2 className="uppercase text-2xl lg:text-[35px] font-bold text-center my-4 lg:my-8">
+        <h2 className="uppercase text-2xl lg:text-[35px] font-bold text-center my-4 lg:mt-8 lg:mb-12">
           Conoce nuestros servicios
         </h2>
-        <ul tabIndex={-1} className="grid lg:grid-cols-4 items-center">
-          { servicios.map((service)=>(
-            <Service service={service} key={Date.now()}/>
+        <ul tabIndex={-1} className="grid md:grid-cols-2 xl:grid-cols-4 items-start gap-8 lg:gap-4">
+          { servicios.map((service, index)=>(
+            <Service service={service} key={index}/>
           ))}
         </ul>
       </div>
